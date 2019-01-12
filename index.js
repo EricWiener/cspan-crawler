@@ -6,8 +6,8 @@ async function crawl(url){
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(url);
-    await page.waitForSelector("section.transcript");
-    let html = await page.content();
+    await page.waitForSelector("section.transcript div table tbody tr");
+    const html = await page.content();
     await browser.close();
     let results = [];
     $('section.transcript div table tbody tr', html).each(function() {
@@ -21,5 +21,7 @@ async function crawl(url){
     console.log(err);
   }
 }
+
+crawl("https://www.c-span.org/video/?454506-1/york-city-bar-association-hosts-forum-freedom-speech");
 
 module.exports.crawl = crawl;
