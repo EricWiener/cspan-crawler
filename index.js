@@ -17,7 +17,6 @@ exports.crawl = async function crawl(url){
        results.push({"timeStart": time, "speaker": speaker, "text": text});
     });
     return results;
-  }
   }catch(err){
     console.log(err);
   }
