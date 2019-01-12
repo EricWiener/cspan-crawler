@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const $ = require('cheerio');
 
-exports.crawl = async function crawl(url){
+async function crawl(url){
   try{
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -21,3 +21,5 @@ exports.crawl = async function crawl(url){
     console.log(err);
   }
 }
+
+module.exports.crawl = crawl;

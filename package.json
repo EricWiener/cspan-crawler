@@ -1,6 +1,6 @@
 {
   "name": "cspan-crawler",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "NPM package to extract full transcripts from C-Span videos",
   "main": "index.js",
   "directories": {
