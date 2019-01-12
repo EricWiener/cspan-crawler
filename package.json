@@ -4,7 +4,6 @@
   "description": "NPM package to extract full transcripts from C-Span videos",
   "main": "index.js",
   "directories": {
-    "test": "test"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
