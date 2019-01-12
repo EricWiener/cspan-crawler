@@ -1,0 +1,26 @@
+{
+  "name": "cspan-crawler",
+  "version": "1.0.0",
+  "description": "NPM package to extract full transcripts from C-Span videos",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "puppeteer": "^1.11.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawl cspan",
+    "cspan",
+    "crawl-cspan",
+    "extract-cspan"
+  ],
+  "author": "Eric Wiener",
+  "license": "GNU"
+}
