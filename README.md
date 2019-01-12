@@ -25,6 +25,6 @@ $ npm i cspan-crawler --save
 const crawler = require('cspan-crawler');
 
 let url = "https://www.c-span.org/video/?c4772787/senator-murkowski-shutting-government-governing"
-let results = crawler.crawl(url);
+let results = await crawler.crawl(url);
 console.log(results)
 ```
