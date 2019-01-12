@@ -7,7 +7,8 @@ exports.crawl = async function crawl(url){
     const page = await browser.newPage();
     await page.goto(url);
     await page.waitForSelector("section.transcript");
-    const html = await page.content();
+    let html = await page.content();
+    await browser.close();
     let results = [];
     $('section.transcript div table tbody tr', html).each(function() {
        time = $(this).find('th').text().trim();
@@ -16,7 +17,7 @@ exports.crawl = async function crawl(url){
        results.push({"timeStart": time, "speaker": speaker, "text": text});
     });
     return results;
-    await browser.close();
+  }
   }catch(err){
     console.log(err);
   }
