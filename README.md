@@ -17,7 +17,7 @@
 
 ## Installation
 ```
-npm i cspan-crawler --save
+$ npm i cspan-crawler --save
 ```
 
 ## Usage:
