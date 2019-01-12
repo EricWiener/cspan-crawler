@@ -16,6 +16,7 @@ exports.crawl = async function crawl(url){
        results.push({"timeStart": time, "speaker": speaker, "text": text});
     });
     return results;
+    await browser.close();
   }catch(err){
     console.log(err);
   }
