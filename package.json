@@ -21,5 +21,6 @@
     "extract-cspan"
   ],
   "author": "Eric Wiener",
-  "license": "GNU"
+  "license": "GNU",
+  "repository": "https://github.com/EricWiener/cspan-crawler"
 }
